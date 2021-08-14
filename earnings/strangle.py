@@ -1,7 +1,7 @@
-"""This module builds our Strangle strategy and makes sure it meets
+"""This module builds our strangle strategy and makes sure it meets
 our desired criteria.
 
-We want a Strangle that covers the expected move, is liquid and has a
+We want a strangle that covers the expected move, is liquid and has a
 minimum amount of premium in it.
 """
 
@@ -80,11 +80,11 @@ class Strangle(OptionChain):
             bid = strangle['bid'].sum()
             ask = strangle['ask'].sum()
             mid = (ask + bid) / 2
-            
+
             # We might wanna check the spreads later:
             # spread = ask - bid
             # relative_spread = spread / mid
-            
+
             premium = (bid + ask) / 2
 
             if premium < min_premium:

@@ -1,18 +1,13 @@
 #!/usr/bin/env python
-
 """The setup script."""
 
 from setuptools import setup, find_packages
 
-with open('README.rst') as readme_file:
-    readme = readme_file.read()
+requirements = []
 
-with open('HISTORY.rst') as history_file:
-    history = history_file.read()
-
-requirements = [ ]
-
-test_requirements = ['pytest>=3', ]
+test_requirements = [
+    'pytest>=3',
+]
 
 setup(
     author="Or Shem Tov",
@@ -28,10 +23,11 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
     ],
-    description="An options trading strategy that sells strangles before earnings announcements.",
+    description=
+    "An options trading strategy that sells strangles before earnings announcements.",
     install_requires=requirements,
     license="MIT license",
-    long_description=readme + '\n\n' + history,
+    long_description=None,
     include_package_data=True,
     keywords='earnings',
     name='earnings',

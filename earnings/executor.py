@@ -1,4 +1,4 @@
-"""This module contains all the logic that is used to execute Strangles trades
+"""This module contains all the logic that is used to execute strangles trades
 on the TD Ameritrade platform.
 """
 
