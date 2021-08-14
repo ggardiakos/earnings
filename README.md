@@ -46,6 +46,8 @@ export FINVIZ_EMAIL="YOUR_FINVIZ_EMAIL_HERE"
 export FINVIZ_PASSWORD="YOUR_FINVIZ_PASSWORD_HERE"
 ```
 
+In order to work with TD Ameritrade's API, you'll need to generate an access token, the `Broker` class will do it for you through its `connect` method, once you sign in, the token will be placed in the `utils` folder, every token is valid for 90 days.
+
 ## Usage
 
 See examples notebook (examples.ipynb in the root folder) for more detailed examples.
