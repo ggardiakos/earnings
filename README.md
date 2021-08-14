@@ -48,13 +48,15 @@ export FINVIZ_PASSWORD="YOUR_FINVIZ_PASSWORD_HERE"
 
 ## Usage
 
+See examples notebook (examples.ipynb in the root folder) for more detailed examples.
+
 Quotes
 
 ```python
 from earnings.broker import Broker
 
 br = Broker()
-quotes = br.quotes(['GOOG', 'AMZN'])
+quotes = br.get_quotes(['GOOG', 'AMZN'])
 print(quotes)
 ```
 

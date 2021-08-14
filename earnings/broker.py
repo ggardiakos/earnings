@@ -8,8 +8,6 @@ import pandas as pd
 import tda
 from utils import camel_to_snake
 
-print(os.environ.get('TD_ACCOUNT_ID'))
-
 
 class Broker:
     UTILS_PATH = os.path.abspath('utils')
